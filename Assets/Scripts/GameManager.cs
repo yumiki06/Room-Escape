@@ -7,9 +7,8 @@ public class GameManager : MonoBehaviour
     // パネルの取得
     public GameObject ChairKeyPanel;
     public GameObject ChairDefaultPanel;
-    public GameObject StairPanel;
 
-    // ボタンを押すと該当パネルが表示される
+    // ボタンを押すと該当パネルを表示する
     public void OnClickChairTrigger()
     {
         ChairKeyPanel.SetActive(true);
@@ -18,11 +17,6 @@ public class GameManager : MonoBehaviour
     {
         ChairDefaultPanel.SetActive(true);
     }
-    public void OnClickStairTrigger()
-    {
-        StairPanel.SetActive(true);
-    }
-
 
 
 }
