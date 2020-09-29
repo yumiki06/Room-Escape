@@ -32,6 +32,11 @@ public class ItemBoxManager : MonoBehaviour
                 break;
         }
     }
+    // アイテムを使用
+    public void UseItem(int index)
     {
+        itemList[index] = ITEM.NONE; //アイテムを使用したら空にする
+        itemBoxImages[index].sprite = null;
     }
+
 }
