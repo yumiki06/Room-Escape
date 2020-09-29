@@ -20,6 +20,17 @@ public class ItemBoxManager : MonoBehaviour
     // アイテムを取得
     public void SetItem(ITEM item)
     {
+        itemList[0] = item;
+        switch (item)
+        {
+            case ITEM.ROOM_KEY:
+                itemBoxImages[0].sprite = roomKeySprite;
+                break;
+            default:
+            case ITEM.NONE:
+                itemBoxImages[0].sprite = null;
+                break;
+        }
     }
     {
     }
