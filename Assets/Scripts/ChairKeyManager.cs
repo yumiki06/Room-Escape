@@ -6,6 +6,7 @@ public class ChairKeyManager : MonoBehaviour
 {
     [SerializeField] GameObject RoomKeyPanel;
     [SerializeField] GameObject AlertText;
+    [SerializeField] ItemBoxManager ItemBoxManager;
 
     void Start()
     {
@@ -24,6 +25,7 @@ public class ChairKeyManager : MonoBehaviour
     public void OnClickTrigger()
     {
         RoomKeySetActive(true);
+        ItemBoxManager.SetItem(ITEM.ROOM_KEY);
     }
 
     //鍵の画像をクリックすると非表示に切り替える
